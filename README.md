@@ -1,8 +1,9 @@
 # MajorRAT
 MACOSX Remote Administration Tool
 # Installing
+Git clone it on your pc
 ```
-https://github.com/MajorRaccoon/MajorRAT.git
+git clone https://github.com/MajorRaccoon/MajorRAT.git
 ```
 # Starting work
 1. Go to directory where RAT is installed
