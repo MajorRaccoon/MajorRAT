@@ -49,5 +49,6 @@ while True:
 s.close()
 """
 la = os.path.dirname(__file__)
-with open(la, "/builds", "w") as python_script_file:
+fName = os.path.join(la,"builds",NAME)
+with open(fName, "w") as python_script_file:
     python_script_file.write(other_python_script)
