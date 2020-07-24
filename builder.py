@@ -1,5 +1,5 @@
 import os
-ip = input("Enter IP: ")
+"ip" = input("Enter IP: ")
 port = int(input("Enter port: "))
 NAME = input("Enter name of script: ")
 other_python_script = f"""
