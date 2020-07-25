@@ -23,7 +23,7 @@ git clone https://github.com/MajorRaccoon/MajorRAT.git
 ```
 cd MajorRAT
 ```
-2. Run builder.py, enter IP and PORT, file will be built in same directory as builder.p
+2. Run builder.py, enter IP and PORT, file will be built in "builds"
 ```
 python3 builder.py
 ```
